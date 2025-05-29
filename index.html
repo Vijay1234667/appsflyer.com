@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- <link rel="stylesheet" href="css/aos.css"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="css/aos.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -149,66 +151,65 @@
 
     <header class="d-md-none d-block">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <div class="container">
-            <a class="navbar-brand" href="#">
-              <img
-                src="https://ik.imagekit.io/gku4adhog/Screenshot_2024-12-02_203012-removebg-preview.png?updatedAt=1733151653659"
-                alt="Logo" width="150">
-            </a>
-    
-            <button class="menu-btn ms-auto d-lg-none" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-            </button>
-    
-            <div class="offcanvas offcanvas-start offcanvas-lg bg-dark text-white" id="offcanvasNavbar">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title">Menu</h5>
-                <button type="button" class="btn text-white fs-3" data-bs-dismiss="offcanvas">
-                  <i class="fa-solid fa-xmark"></i>
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://ik.imagekit.io/gku4adhog/Screenshot_2024-12-02_203012-removebg-preview.png?updatedAt=1733151653659"
+                        alt="Logo" width="150">
+                </a>
+
+                <button class="menu-btn ms-auto d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </button>
-              </div>
-              <div class="offcanvas-body d-lg-flex d-block align-items-lg-center">
-                <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Page</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownMenu" role="button"
-                      data-bs-toggle="dropdown">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <div class="d-md-block d-none">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownMenu" role="button"
-                      data-bs-toggle="dropdown">
-                      Login
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                    </ul>
-                  </li>
+
+                <div class="offcanvas offcanvas-start offcanvas-lg bg-dark text-white" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn text-white fs-3" data-bs-dismiss="offcanvas">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body d-lg-flex d-block align-items-lg-center">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Page</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownMenu" role="button"
+                                    data-bs-toggle="dropdown">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="d-md-block d-none">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="dropdownMenu" role="button"
+                                    data-bs-toggle="dropdown">
+                                    Login
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </nav>
-      </header>
+    </header>
 
     <main>
         <section class="banner-section">
@@ -216,7 +217,8 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center banner-top-content">
-                            <h1>Make good<span class="d-md-block">data-driven <span class="auto-type-text">choices</span></span></h1>
+                            <h1>Make good<span class="d-md-block">data-driven <span
+                                        class="auto-type-text">choices</span></span></h1>
                             <p class="mb-md-5">
                                 Transform insights into growth. Increase app installs and <span class="d-md-block">hit
                                     your LTV goals with the #1
@@ -230,7 +232,8 @@
                 <div class="row justify-content-center banner-app-industry mb-md-5">
                     <div class="col-md-10 col-lg-10">
                         <div class="row">
-                            <div class="col-md-6 col-lg-3 mb-3 animate__animated  animate__zoomInDown" data-aos="fade-down-right">
+                            <div class="col-md-6 col-lg-3 mb-3 animate__animated  animate__zoomInDown"
+                                data-aos="fade-down-right">
                                 <a href="javascript:void(0)" onclick="toggleCheckbox(event)">
                                     <div class="card h-100 text-center position-relative">
                                         <div class="position-absolute top-0 start-10 py-3">
@@ -242,7 +245,8 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-6 col-lg-3 mb-3 animate__animated  animate__zoomInDown"  data-aos="fade-down-left">
+                            <div class="col-md-6 col-lg-3 mb-3 animate__animated  animate__zoomInDown"
+                                data-aos="fade-down-left">
                                 <a href="javascript:void(0)" onclick="toggleCheckbox(event)">
                                     <div class="card h-100 text-center">
                                         <div class="position-absolute top-0 start-10 py-3">
@@ -286,7 +290,25 @@
             </div>
         </section>
 
-        <section class="image-container py-5"  >
+
+
+   <section class="slider-body-section">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image: url('https://ik.imagekit.io/gku4adhog/carbannerbg.jpg?updatedAt=1737611673757');"></div>
+      <div class="swiper-slide" style="background-image: url('https://ik.imagekit.io/gku4adhog/happy-customer-buying-brand-new-car-local-car-dealership.jpg?updatedAt=1736752764720');"></div>
+      <div class="swiper-slide" style="background-image: url('https://ik.imagekit.io/gku4adhog/woman-sitting-red-car-receiving-keys.jpg?updatedAt=1736752718054');"></div>
+    </div>
+  </div>
+
+  <div class="banner-content">
+    <h1>Explore Beautiful Places</h1>
+    <p>Experience the magic of nature</p>
+    <button class="btn btn-primary">Get Started</button>
+  </div>
+</section>
+
+        <section class="image-container py-5">
             <div class="container-fluid">
                 <div class="row justify-content-around text-center ">
                     <div class="col-lg-1 col-md-4 col-6 mb-3 text-justify">
@@ -321,7 +343,8 @@
             <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-md-6 order-md-last" data-aos="fade-down-left">
-                        <img class="img-fluid" src="https://ik.imagekit.io/gku4adhog/1243.jpg?updatedAt=1733738926959" alt="iphone">
+                        <img class="img-fluid" src="https://ik.imagekit.io/gku4adhog/1243.jpg?updatedAt=1733738926959"
+                            alt="iphone">
                     </div>
                     <div class="col-md-6 my-auto px-3  px-md-5 py-md-5 py-3">
                         <div class="responsive-content">
@@ -340,9 +363,10 @@
                 </div>
                 <div class="row g-0">
                     <div class="col-md-6">
-                        <img class="img-fluid" src="https://ik.imagekit.io/gku4adhog/1242.jpg?updatedAt=1733738809516" alt="code">
+                        <img class="img-fluid" src="https://ik.imagekit.io/gku4adhog/1242.jpg?updatedAt=1733738809516"
+                            alt="code">
                     </div>
-                    <div class="col-md-6 my-auto px-3  px-md-5 py-md-5 py-3"  data-aos="zoom-out-right">
+                    <div class="col-md-6 my-auto px-3  px-md-5 py-md-5 py-3" data-aos="zoom-out-right">
                         <div class="responsive-content">
                             <h2>Updated For Bootstrap 5</h2>
                             <span class="reausable-span"></span>
@@ -362,6 +386,16 @@
             </div>
         </section>
 
+        <section class="parallax-section">
+            <div class="container-fluid p-0">
+                <div class="parallax-1"></div>
+                <div class="parallax-2"></div>
+                <div class="parallax-3"></div>
+                <div class="parallax-4"></div>
+                <div class="parallax-5"></div>
+            </div>
+        </section>
+
         <button class="scroll-to-top" id="scrollToTopBtn">↑</button>
 
 
@@ -370,6 +404,38 @@
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true, 
+    effect: 'fade',
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    speed: 1000,
+    fadeEffect: { crossFade: true }
+  });
+
+  // Add zoom effect on slide transition
+  swiper.on('slideChangeTransitionStart', function () {
+    document.querySelectorAll('.swiper-slide').forEach(slide => {
+      slide.classList.remove('zoom');
+    });
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    activeSlide.classList.add('zoom');
+  });
+
+  // Apply zoom effect to the initial slide
+  document.addEventListener('DOMContentLoaded', function () {
+    const initialSlide = swiper.slides[swiper.activeIndex];
+    initialSlide.classList.add('zoom');
+  });
+</script>
+
 
     <script>
         AOS.init({
@@ -401,12 +467,12 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-          const menuBtn = document.querySelector(".menu-btn");
-          menuBtn.addEventListener("click", function () {
-            menuBtn.classList.toggle("active");
-          });
+            const menuBtn = document.querySelector(".menu-btn");
+            menuBtn.addEventListener("click", function () {
+                menuBtn.classList.toggle("active");
+            });
         });
-      </script>
+    </script>
 
     <script>
         function toggleCheckbox(event) {
@@ -431,52 +497,55 @@
 
 
 
+
+
     <script>
         const toggleBtn = document.getElementById('toggleMode');
         toggleBtn.addEventListener('click', () => {
-          document.body.classList.toggle('dark-mode');
-          if (document.body.classList.contains('dark-mode')) {
-            toggleBtn.textContent = 'Light Mode';
-          } else {
-            toggleBtn.textContent = 'Dark Mode';
-          }
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                toggleBtn.textContent = 'Light Mode';
+            } else {
+                toggleBtn.textContent = 'Dark Mode';
+            }
         });
-      </script>
+    </script>
 
 
     <script>
-        var typed = new Typed(".auto-type-text",{
-        strings: ["Mumbai", "Adipisicing", "Section"],
-        typeSpeed: 180,
-        backSpeed: 180,
-        loop: true,
-        //startDelay: 500, 
-        //backDelay: 1000, 
-        //showCursor: false, 
-        //fadeOut: true, 
-        //fadeOutDelay: 500, 
-        //cursorChar: "➤", 
+        var typed = new Typed(".auto-type-text", {
+            strings: ["Mumbai", "Adipisicing", "Section"],
+            typeSpeed: 180,
+            backSpeed: 180,
+            loop: true,
+            //startDelay: 500, 
+            //backDelay: 1000, 
+            //showCursor: false, 
+            //fadeOut: true, 
+            //fadeOutDelay: 500, 
+            //cursorChar: "➤", 
         })
-      </script>
+    </script>
 
 
-      <script>
+    <script>
         const scrollToTopBtn = document.getElementById('scrollToTopBtn');
         const handleScroll = () => {
-          if (window.scrollY > 100) {
-            scrollToTopBtn.style.display = 'block';
-          } else {
-            scrollToTopBtn.style.display = 'none';
-          }
+            if (window.scrollY > 100) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
         };
-    
+
         const scrollToTop = () => {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         };
-    
+
         window.addEventListener('scroll', handleScroll);
         scrollToTopBtn.addEventListener('click', scrollToTop);
-      </script>
+    </script>
+
 
 
 </body>
