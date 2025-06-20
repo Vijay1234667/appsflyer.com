@@ -320,6 +320,41 @@ p {
       text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
 
+
+
+
+    /*  */
+.banner-section-1{
+  padding: 50px 0px;
+}
+.banner-section-1  h2{
+  font-weight: 700;
+  color: #45444A;
+  font-size: 27px;
+}
+.banner-section-1  h4{
+  font-weight: 400;
+  color: #45444A;
+  font-size: 27px;
+}
+
+.age-btn{
+  background-color: #34B37E;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  width: 100%;
+  text-wrap: nowrap;
+  padding: 17px 0px;
+}
+
+
+
+
+
+
 @media (max-width: 767px) {
   .banner-section {
     padding: 71px 10px;
