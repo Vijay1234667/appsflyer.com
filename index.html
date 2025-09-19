@@ -23,6 +23,19 @@
 </head>
 
 <body>
+
+    <section>
+        <div id="overlay1" class="d-flex justify-content-center align-items-center">
+            <div class="card bg-white text-dark text-center py-0 px-4">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Applying machine intelligence to</h5>
+                    <img id="loadingGif" class="img-fluid mb-3" src="./img/MetaAIlogo.gif" alt="Loading..." />
+                    <h5 class="card-title">fetch and process MMP dataset. </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <header class="d-none d-md-block">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
@@ -36,73 +49,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Platform
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <div>
-                                            <ul>
-                                                <h6>Measure</h6>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div>
-                                            <ul>
-                                                <h6>Measure</h6>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div>
-                                            <ul>
-                                                <h6>Measure</h6>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div>
-                                            <ul>
-                                                <h6>Measure</h6>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Solution
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Learn
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
+                            <a class="nav-link font-14 dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Company
                             </a>
@@ -116,7 +63,7 @@
                             </ul>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="javascript:void(0)" id="navbarDropdown">
+                            <a class="nav-link font-14" href="javascript:void(0)" id="navbarDropdown">
                                 Pricing
                             </a>
                         </li>
@@ -124,7 +71,7 @@
 
                     <div class="d-flex nav-right-content">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown"
+                            <a class="nav-link dropdown-toggle lang" href="javascript:void(0)" id="navbarDropdown"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-globe me-2"></i>English
                             </a>
@@ -137,23 +84,14 @@
                                 <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-user me-2"></i> Login
-                            </a>
-                        </li>
                     </div>
-
-                    <div class="d-flex align-items-center nav-right-btn">
-                        <button class="btn">Sign up free</button>
-                        <button class="btn toggle-btn ms-1" id="toggleMode">Dark Mode</button>
+                    <div class="d-flex align-items-center nav-right-btn ms-3">
+                        <button class="btn toggle-btn" id="toggleMode">Dark Mode</button>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
 
     <header class="d-md-none d-block">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -217,25 +155,25 @@
         </nav>
     </header>
 
-    <main>
-        <section class="banner-section">
+    <main role="main">
+        <section class="banner-section mt-80">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="text-center banner-top-content">
                             <h1>Make good<span class="d-md-block">data-driven <span
                                         class="auto-type-text">choices</span></span></h1>
-                            <p class="mb-md-5">
+                            <p class="mb-md-5 text-paragraph">
                                 Transform insights into growth. Increase app installs and hit
                                 your LTV goals with <span class="d-md-block"></span> the #1
                                 measurement partner.</span>
                             </p>
-                            <h2 class="mb-md-5">Select your app industry:</h2>
+                            <h2 class="mb-md-5 hover-bottom-border pb-2">Select your app industry:</h2>
                         </div>
                     </div>
                 </div>
 
-                <div class="row justify-content-center banner-app-industry mb-md-5">
+                <div class="row justify-content-center banner-app-industry mb-md-5 py-5">
                     <div class="col-md-10 col-lg-10">
                         <div class="row">
                             <div class="col-md-6 col-lg-3 mb-3 animate__animated  animate__zoomInDown"
@@ -298,110 +236,148 @@
 
 
 
-        <section class="slider-body-section">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"
-                        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url('https://ik.imagekit.io/gku4adhog/happy-customer-buying-brand-new-car-local-car-dealership.jpg?updatedAt=1736752764720');background-size: cover; background-position: center;">
+        <section class="responsive-design py-5">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-md-6 order-md-last" data-aos="fade-down-left">
+                        <img class="img-fluid" src="https://ik.imagekit.io/gku4adhog/1243.jpg?updatedAt=1733738926959"
+                            alt="iphone">
                     </div>
-                    <div class="swiper-slide"
-                        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.55)), url('https://ik.imagekit.io/gku4adhog/woman-sitting-red-car-receiving-keys.jpg?updatedAt=1736752718054'); background-size: cover; background-position: center;">
+                    <div class="col-md-6 my-auto px-3  px-md-5 py-md-5 py-3">
+                        <div class="responsive-content">
+                            <h2 class="text-primary-color">Fully Responsive Design</h2>
+                            <span class="reausable-span"></span>
+                            <p class="text-white">When you use a theme created by Start Bootstrap, you know that the
+                                theme will look great
+                                on any device, whether it's a phone, tablet, or desktop the page will behave
+                                responsively!
+                            </p>
+                            <div class="learn-more-btn">
+                                <a href="javascript:void(0)" class="btn bg-primary-color">Learn
+                                    More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img class="img-fluid" src="https://ik.imagekit.io/gku4adhog/1242.jpg?updatedAt=1733738809516"
+                            alt="code">
+                    </div>
+                    <div class="col-md-6 my-auto px-3  px-md-5 py-md-5 py-3" data-aos="zoom-out-right">
+                        <div class="responsive-content">
+                            <h2 class="text-primary-color">Updated For Bootstrap 5</h2>
+                            <span class="reausable-span"></span>
+                            <p class="text-white">Newly improved, and full of great utility classes, Bootstrap 5 is
+                                leading the way in
+                                mobile
+                                responsive web development! All of the themes on Start Bootstrap are now using Bootstrap
+                                5!
+                            </p>
+                            <div class="learn-more-btn">
+                                <a href="javascript:void(0)" class="btn bg-primary-color text-white font-size-14">Learn
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="banner-content">
-                <h1>Explore Beautiful Places</h1>
-                <button class="btn btn-primary">Get Started</button>
             </div>
         </section>
 
-        <section class="image-container py-5">
-            <div class="container-fluid">
-                <div class="row justify-content-around text-center ">
-                    <div class="col-lg-1 col-md-4 col-6 mb-3 text-justify">
-                        <img src="./img/hp-walmart-logo.svg" alt="walmart">
-                    </div>
-                    <div class="col-lg-1 col-md-4 col-6 mb-3">
-                        <img src="./img/hp-grab-logo.svg" alt="grab">
-                    </div>
-                    <div class="col-lg-1 col-md-4 col-6 mb-3 text-justify">
-                        <img src="./img/hp-tiktok-logo.svg" alt="tiktok">
-                    </div>
-                    <div class="col-lg-1 col-md-4 col-6 mb-3 ">
-                        <img src="./img/hp-adidas-logo.svg" alt="adidas">
-                    </div>
-                    <div class="col-lg-1 col-md-4 col-6 mb-3 text-justify">
-                        <img src="./img/hp-agoda-logo.svg" alt="agoda">
-                    </div>
-                    <div class="col-lg-1 col-md-4 col-6 mb-3 ">
-                        <img src="./img/hp-king-logo.svg" alt="bbva">
-                    </div>
-                    <div class="col-lg-1 col-md-4 col-6 mb-3 text-justify">
-                        <img src="./img/hp-bbva-logo.svg" alt="bbva">
-                    </div>
-                    <div class="col-lg-1 col-md-4 col-6 mb-3 ">
-                        <img src="./img/hp-macdonalds-logo.svg" alt="macdonalds">
-                    </div>
-                </div>
-            </div>
-        </section>
 
-
-        <section>
+        <section class="image-container py-2">
             <div class="container">
-                <div class="row overview-wrapper">
-                    <div class="col-lg-6  radius-10 col-md-6 col-xl-6 mb-3 mb-md-3 p-0 g-0 ">
-                        <div class="card border-0">
-                            <div class="card-body  border radius-10 ">
-                                <figure class="highcharts-figure mt-md-2">
-                                    <div id="rpc" class="rpcgraph" style=""></div>
-                                </figure>
-                            </div>
-                        </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="img-fluid" src="./img/hp-walmart-logo.svg" alt="walmart" loading="lazy">
                     </div>
-
-                    <div class="col-lg-6  col-md-6 col-xl-6  rounded rounded-md mb-3 mb-md-3 ">
-                        <div class="card border-0">
-                            <div class="card-body  border radius-10">
-                                <figure class="highcharts-figure  mt-md-2">
-                                    <div id="rpc-2" class="rpcgraph" style=""></div>
-                                </figure>
-                            </div>
-                        </div>
+                    <div class="item">
+                        <img class="img-fluid" src="./img/hp-grab-logo.svg" alt="grab" loading="lazy">
                     </div>
-
-                    <div class="col-lg-6 p-2 p-md-0 radius-10 col-md-6 col-xl-6 mb-3 mb-md-3">
-                        <div class="card border-0 ">
-                            <div class="card-body  border radius-10">
-                                <figure class="highcharts-figure  mt-md-2">
-                                    <div id="rpc-3" class="rpcgraph" style=""></div>
-                                </figure>
-                            </div>
-                        </div>
+                    <div class="item">
+                        <img class="img-fluid" src="./img/hp-tiktok-logo.svg" alt="tiktok" loading="lazy">
                     </div>
+                    <div class="item">
+                        <img class="img-fluid" src="./img/hp-agoda-logo.svg" alt="agoda" loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img class="img-fluid" src="./img/hp-king-logo.svg" alt="bbva" loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img class="img-fluid" src="./img/hp-bbva-logo.svg" alt="bbva" loading="lazy">
+                    </div>
+                    <div class="item">
+                        <img class="img-fluid" src="./img/hp-macdonalds-logo.svg" alt="macdonalds" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="col-lg-6 col-md-6 col-xl-6  rounded rounded-md mb-3 mb-md-2">
-                        <div class="card border-0 ">
-                            <div class="card-body  border radius-10">
-                                <figure class="highcharts-figure  mt-md-2">
-                                    <div id="rpc-4" class="rpcgraph" style=""></div>
-                                </figure>
+        <section class="age-group-section py-5 mt-4">
+            <div class="container">
+                <div class="text-center mb-3 mb-md-4">
+                    <h2 class="mb-4 text-primary-color">Get Started Below</h2>
+                </div>
+                <div class="row justify-content-center text-center pb-5">
+                    <div class="col-md-8">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-md-4 col-6 mb-2">
+                                <div>
+                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 mb-2">
+                                <div>
+                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 mb-2">
+                                <div>
+                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 mb-2">
+                                <div>
+                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6 mb-2">
+                                <div>
+                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <div>
+                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
+
+
+
+
 
         <section class="auto-animation-lottie">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-md-6">
                         <div>
-                            <h2> Where to Get Lottie Animations?
+                            <h2 class="text-primary-color"> Where to Get Lottie Animations?
                             </h2>
-                            <p>LottieFiles — Free and premium animations.Icons8 Lottie — Lottie-based icons.</p>
+                            <p class="text-white">LottieFiles — Free and premium animations.Icons8 Lottie — Lottie-based
+                                icons.</p>
 
                         </div>
                     </div>
@@ -413,6 +389,47 @@
             </div>
         </section>
 
+
+
+
+
+
+
+
+
+        <section class="code-reference-pages mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <img class="img-fluid " style="flex: 1;" src="./img/reactgitdeploy.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <img class="img-fluid" src="./img/reactvitegitdeploy.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="parallax-section">
+            <div class="container-fluid p-0">
+                <div class="parallax-1"></div>
+                <div class="parallax-2"></div>
+            </div>
+        </section>
+
+
         <section>
             <div class="container">
                 <div class="row report-statistics-datatable-charts ">
@@ -422,17 +439,23 @@
                                 <form class="d-flex flex-wrap align-items-baseline" action="" id="filterForm"
                                     name="filterForm" method="POST">
                                     <div class="col-md-3 col-6">
-                                        <div class=" card">
-                                            <div class="d-flex align-items-baseline justify-content-between py-2 px-1">
-                                                <h4 class=" me-3 mb-0">Group By - </h4>
-                                                <select type="button" name="filter_by" class="" id="filter_by">
-                                                    <option value="date">Filter</option>
-                                                    <option value="city">City</option>
-                                                    <option value="device">Device</option>
-                                                    <option value="source">Source</option>
-                                                </select>
-                                            </div>
-                                        </div>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle lang" href="javascript:void(0)"
+                                                id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <i class="fa-solid fa-globe me-2"></i>English
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="javascript:void(0)">Action</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0)">Another
+                                                        action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="javascript:void(0)">Something else
+                                                        here</a></li>
+                                            </ul>
+                                        </li>
                                     </div>
 
                                     <div class="col-md-3 col-lg-3 col-12 mb-3 ms-2 ">
@@ -447,12 +470,11 @@
                                     </div>
 
                                     <div class="col-md-2 col-12 ms-2 card">
-                                        <button type="submit" class="py-2 smt-btn">Submit</button>
+                                        <button type="submit" class="py-2">Submit</button>
                                     </div>
 
                                 </form>
                             </div>
-
                             <div class="campaign position-relative mb-4">
                                 <div class="campaign-header table-head">
                                 </div>
@@ -608,48 +630,45 @@
             </div>
         </section>
 
-
-
-
-
-        <section class="banner-section-1">
+        <section>
             <div class="container">
-                <div class="text-center mb-3 mb-md-4">
-                    <h4>Get Started Below</h4>
-                </div>
+                <div class="row overview-wrapper">
+                    <div class="col-lg-6  radius-10 col-md-6 col-xl-6 mb-3 mb-md-3 p-0 g-0 ">
+                        <div class="card border-0">
+                            <div class="card-body  border radius-10 ">
+                                <figure class="highcharts-figure mt-md-2">
+                                    <div id="rpc" class="rpcgraph" style=""></div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="row justify-content-center text-center pb-5">
-                    <div class="col-md-8">
-                        <div class="row justify-content-center text-center">
-                            <div class="col-md-4 col-6 mb-2">
-                                <div>
-                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
-                                </div>
+                    <div class="col-lg-6  col-md-6 col-xl-6  rounded rounded-md mb-3 mb-md-3 ">
+                        <div class="card border-0">
+                            <div class="card-body  border radius-10">
+                                <figure class="highcharts-figure  mt-md-2">
+                                    <div id="rpc-2" class="rpcgraph" style=""></div>
+                                </figure>
                             </div>
-                            <div class="col-md-4 col-6 mb-2">
-                                <div>
-                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
-                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 p-2 p-md-0 radius-10 col-md-6 col-xl-6 mb-3 mb-md-3">
+                        <div class="card border-0 ">
+                            <div class="card-body  border radius-10">
+                                <figure class="highcharts-figure  mt-md-2">
+                                    <div id="rpc-3" class="rpcgraph" style=""></div>
+                                </figure>
                             </div>
-                            <div class="col-md-4 col-6 mb-2">
-                                <div>
-                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-6 mb-2">
-                                <div>
-                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-6 mb-2">
-                                <div>
-                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-6">
-                                <div>
-                                    <a href="javascript:void(0)" class="btn age-btn">20-29</a>
-                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-xl-6  rounded rounded-md mb-3 mb-md-2">
+                        <div class="card border-0 ">
+                            <div class="card-body  border radius-10">
+                                <figure class="highcharts-figure  mt-md-2">
+                                    <div id="rpc-4" class="rpcgraph" style=""></div>
+                                </figure>
                             </div>
                         </div>
                     </div>
@@ -658,106 +677,8 @@
         </section>
 
 
-        <section class="code-reference-pages mb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card h-100">
-                            <img class="img-fluid " style="flex: 1;" src="./img/reactgitdeploy.png" alt="">
-                        </div>
-                    </div>
-                      <div class="col-md-6">
-                        <div class="card h-100">
-                            <img class="img-fluid" src="./img/reactvitegitdeploy.png" alt="">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="responsive-design">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-md-6 order-md-last" data-aos="fade-down-left">
-                        <img class="img-fluid" src="https://ik.imagekit.io/gku4adhog/1243.jpg?updatedAt=1733738926959"
-                            alt="iphone">
-                    </div>
-                    <div class="col-md-6 my-auto px-3  px-md-5 py-md-5 py-3">
-                        <div class="responsive-content">
-                            <h2>Fully Responsive Design</h2>
-                            <span class="reausable-span"></span>
-                            <p>When you use a theme created by Start Bootstrap, you know that the theme will look great
-                                on any device, whether it's a phone, tablet, or desktop the page will behave
-                                responsively!
-                            </p>
-                            <div class="learn-more-btn">
-                                <a href="javascript:void(0)" class="btn bg-primary-color">Learn
-                                    More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-md-6">
-                        <img class="img-fluid" src="https://ik.imagekit.io/gku4adhog/1242.jpg?updatedAt=1733738809516"
-                            alt="code">
-                    </div>
-                    <div class="col-md-6 my-auto px-3  px-md-5 py-md-5 py-3" data-aos="zoom-out-right">
-                        <div class="responsive-content">
-                            <h2>Updated For Bootstrap 5</h2>
-                            <span class="reausable-span"></span>
-                            <p>Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in
-                                mobile
-                                responsive web development! All of the themes on Start Bootstrap are now using Bootstrap
-                                5!
-                            </p>
-                            <div class="learn-more-btn">
-                                <a href="javascript:void(0)" class="btn bg-primary-color text-white font-size-14">Learn
-                                    More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="parallax-section">
-            <div class="container-fluid p-0">
-                <div class="parallax-1"></div>
-                <div class="parallax-2"></div>
-            </div>
-        </section>
 
 
-        <section class="corousel-section">
-            <div class="container">
-                <div>
-                    <h4 class="mb-3 text-white py-3 text-center fw-bold">Our History</h4>
-                </div>
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <img src="./img/historyslide.jpg" alt="historyslide">
-                        <div class="border-end-carousel-body">
-                            <h5 class="mt-5 border-end-carousel  text-white fs-1 fw-bold">2017</h5>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/historyslide.jpg" alt="historyslide">
-                        <div class="border-end-carousel-body">
-                            <h5 class="mt-5  border-end-carousel  text-white fs-1 fw-bold">2018</h5>
-                        </div>
-                    </div>
-                    <div class="item ">
-                        <img src="./img/historyslide.jpg" alt="historyslide">
-                        <div class="border-end-carousel-body">
-                            <h5 class="mt-5  border-end-carousel  text-white fs-1 fw-bold">2019</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
 
 
@@ -791,9 +712,22 @@
         });
     </script>
 
-
-
     <script>
+        window.addEventListener("load", () => {
+            const overlay = document.getElementById("overlay1");
+            setTimeout(() => {
+                overlay.style.transition = "opacity 0.5s ease-out";
+                overlay.style.opacity = "0";
+                setTimeout(() => {
+                    overlay.style.display = "none";
+                }, 500);
+            }, 2000);
+        });
+    </script>
+
+
+
+    <!-- <script>
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
                 stagePadding: 90,
@@ -816,6 +750,26 @@
                 },
             });
         })
+    </script> -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 2 },
+                    576: { items: 3 },
+                    768: { items: 4 },
+                    992: { items: 5 },
+                    1200: { items: 5 }
+                }
+            });
+        });
     </script>
 
 
